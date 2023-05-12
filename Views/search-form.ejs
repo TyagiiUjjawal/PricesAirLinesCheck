@@ -1,0 +1,63 @@
+<!-- flight-search.ejs -->
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Flight Search</title>
+    <style>
+      h1 {
+        text-align: center;
+      }
+
+      form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 50px;
+      }
+
+      input[type="text"],
+      input[type="date"] {
+        padding: 12px 20px;
+        margin: 8px 0;
+        box-sizing: border-box;
+        border: 2px solid #ccc;
+        border-radius: 4px;
+      }
+
+      button[type="submit"] {
+        background-color: #4caf50;
+        color: white;
+        padding: 12px 20px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+      }
+
+      button[type="submit"]:hover {
+        background-color: #45a049;
+      }
+
+      label {
+        display: block;
+        margin-bottom: 10px;
+        font-weight: bold;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Search for Flights</h1>
+    <form action="/" method="POST">
+      <label for="source">Source:</label>
+      <input type="text" id="source" name="source" /><br />
+
+      <label for="destination">Destination:</label>
+      <input type="text" id="destination" name="destination" /><br />
+
+      <label for="date">Date:</label>
+      <input type="date" id="date" name="date" /><br />
+
+      <button type="submit">Search</button>
+    </form>
+  </body>
+</html>
